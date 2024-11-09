@@ -1,11 +1,12 @@
 import sys
 Numbered_List = [1,2,3,4,5,6,7,8,9]
+#This List Monitors all possible moves for the two Players
 row1 = [{ }, { }, { }]
 row2 = [{ }, { }, { }]
 row3 = [{ }, { }, { }]
 seperation = '--------------'
-def Display():
 
+def Display():
   print(row1)
   print(seperation.strip())
   print(row2)
@@ -25,7 +26,7 @@ def Players_Choose_Their_Tokens():
       Player_2 = 'X'
   else:
       Player_2 = 'O'
-  print("Player 1 is " + Player_1 + " and Player 2 is " + Player_2)
+  print(f"Player 1 is {Player_1} and Player 2 is {Player_2}" )
 def User_Input_Player_1():
   Player_1_Answer = input('Player 1 - Please Enter One Number from 1 through 9 To Determine Where You Want To Place Your Token.')
   try:
